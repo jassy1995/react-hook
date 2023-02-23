@@ -1,13 +1,13 @@
-import { useState } from "react";
+import { useReducer } from "react";
 import Button from "./components/Button";
-const getInitialState = () => 4
+import reducer, { actions } from "./reducers/CounterReducer"
 
 function App() {
-  // const [count, setCount] = useState(4); //same result
-  const [count, setCount] = useState(() => getInitialState()); //same result
+  const [state, dispatch] = useReducer(reducer, { count: 4 })
+  const { count } = state
 
-  const handleIncrement = () => setCount(prev => prev + 1)
-  const handleDecrement = () => setCount(prev => prev - 1)
+  const handleIncrement = () => dispatch({ type: actions.increment })
+  const handleDecrement = () => dispatch({ type: actions.decrement })
   return (
     <div className="h-screen  flex justify-center items-center space-x-4 mx-auto py-4">
       <div className="flex justify-center items-center space-x-4 w-[50%] h-[80%] border border-slate-300 shadow-md p-4">
