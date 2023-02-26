@@ -1,15 +1,31 @@
-import useLocalStorage from "./hooks/useLocalStorage";
-import useUpdateLogger from "./hooks/useUpdateLogger";
+import ArrayCom from "./components/ArrayCom";
+import Debounce from "./components/Debounce";
+import LocalStorage from "./components/LocalStorage";
+import Previous from "./components/Previous";
+import Timeout from "./components/Timeout";
+import Toggle from "./components/Toggle";
+import UpdateEffect from "./components/UpdateEffect";
+import StateWithHistory from './components/StateWithHistory';
+import Storage from "./components/Storage";
+import Fetch from "./components/Fetch";
+import AsynCom from "./components/AsynCom";
 
 function App() {
-  const [name, setName] = useLocalStorage("name", "")
-  useUpdateLogger(name)
+
 
   return (
-    <div className="h-screen  flex justify-center items-center space-x-4 mx-auto py-4">
-      <input type="text" value={name} onChange={(e) => setName(e.target.value)}
-        className="border border-slate-300 p-2 w-48 bg-white text-black rounded-md focus:outline-none"
-      />
+    <div className="flex flex-col justify-center items-center space-y-4 mx-auto py-4">
+      <LocalStorage />
+      {/* <Toggle /> */}
+      {/* <Timeout /> */}
+      {/* <Debounce /> */}
+      {/* <UpdateEffect /> */}
+      {/* <ArrayCom /> */}
+      {/* <Previous /> */}
+      {/* <StateWithHistory /> */}
+      {/* <Storage /> */}
+      {/* <AsynCom /> */}
+      {/* <Fetch /> */}
     </div>
   )
 }
