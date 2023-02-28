@@ -22,6 +22,11 @@ import DarkMode from "./components/DarkMode";
 import CopyToClipboard from "./components/CopyToClipboard";
 import Cookie from "./components/Cookie";
 import Translation from "./components/Translation";
+import OnlineStatus from "./components/OnlineStatus";
+import RenderCount from "./components/RenderCount";
+import DebugInformation from "./components/DebugInformation";
+import Hover from "./components/Hover";
+import LongPress from "./components/LongPress";
 
 
 function App() {
@@ -29,7 +34,7 @@ function App() {
 
   return (
     <div className="flex flex-col justify-center items-center space-y-4 mx-auto py-4">
-      {/* <LocalStorage /> */}
+      <LocalStorage />
       {/* <Toggle /> */}
       {/* <Timeout /> */}
       {/* <Debounce /> */}
@@ -52,7 +57,12 @@ function App() {
       {/* <DarkMode /> */}
       {/* <CopyToClipboard /> */}
       {/* <Cookie /> */}
-      <Translation />
+      {/* <Translation /> */}
+      {/* <OnlineStatus /> */}
+      {/* <RenderCount /> */}
+      {/* <DebugInformation /> */}
+      {/* <Hover /> */}
+      {/* <LongPress /> */}
     </div>
   )
 }
