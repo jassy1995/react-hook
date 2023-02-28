@@ -17,6 +17,11 @@ import Geolocation from "./components/Geolocation";
 import StateWithValidator from "./components/StateWithValidator";
 import SizeCom from "./components/SizeCom";
 import EffectOnce from "./components/EffectOnce";
+import ClickOutside from "./components/ClickOutside";
+import DarkMode from "./components/DarkMode";
+import CopyToClipboard from "./components/CopyToClipboard";
+import Cookie from "./components/Cookie";
+import Translation from "./components/Translation";
 
 
 function App() {
@@ -24,7 +29,7 @@ function App() {
 
   return (
     <div className="flex flex-col justify-center items-center space-y-4 mx-auto py-4">
-      <LocalStorage />
+      {/* <LocalStorage /> */}
       {/* <Toggle /> */}
       {/* <Timeout /> */}
       {/* <Debounce /> */}
@@ -42,7 +47,12 @@ function App() {
       {/* <Geolocation /> */}
       {/* <StateWithValidator /> */}
       {/* <SizeCom /> */}
-      <EffectOnce />
+      {/* <EffectOnce /> */}
+      {/* <ClickOutside /> */}
+      {/* <DarkMode /> */}
+      {/* <CopyToClipboard /> */}
+      {/* <Cookie /> */}
+      <Translation />
     </div>
   )
 }
