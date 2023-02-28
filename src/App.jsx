@@ -9,6 +9,15 @@ import StateWithHistory from './components/StateWithHistory';
 import Storage from "./components/Storage";
 import Fetch from "./components/Fetch";
 import AsynCom from "./components/AsynCom";
+import EventListener from "./components/EventListener";
+import OnScreen from "./components/OnScreen";
+import WindowSize from "./components/WindowSize";
+import MediaQuery from "./components/MediaQuery";
+import Geolocation from "./components/Geolocation";
+import StateWithValidator from "./components/StateWithValidator";
+import SizeCom from "./components/SizeCom";
+import EffectOnce from "./components/EffectOnce";
+
 
 function App() {
 
@@ -26,6 +35,14 @@ function App() {
       {/* <Storage /> */}
       {/* <AsynCom /> */}
       {/* <Fetch /> */}
+      {/* <EventListener /> */}
+      {/* <OnScreen /> */}
+      {/* <WindowSize /> */}
+      {/* <MediaQuery /> */}
+      {/* <Geolocation /> */}
+      {/* <StateWithValidator /> */}
+      {/* <SizeCom /> */}
+      <EffectOnce />
     </div>
   )
 }
